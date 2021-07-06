@@ -1,0 +1,6 @@
+config:
+  apresentacao-pulumi:environment: dev
+  apresentacao-pulumi:vm-password:
+    secure: AAABANK33+vrKWIqwOiCz5gi7iKpXW0UAZ8N233yPduty/DlhOJhVIcDRpdD
+  azure:location: WestUS
+  pulumi:template: azure-csharp
