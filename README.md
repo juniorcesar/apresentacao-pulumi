@@ -1,17 +1,33 @@
-o# Comandos 
+# Projeto Apresentação Pulumi 
 
-## Cria nova stack
-pulumi stack init dev
+## Requisitos
+##  - Pulumi SDK
+##  - Azure Cli
+##  - SDK .NET 5.0
 
-## Cria config 
-pulumi config set environment dev
 
-## Cria config Secret
-pulumi config set --secret vm-password sdjaiUJ#dIKL33
+## Realiza Login
+$ az login
+$ az account show
+$ pulumi login
+$ pulumi stack ls
 
-## Obtém valor do Output 
-pulumi stack output sshPrivateKeyPem --show-secrets
+## Cria um novo projeto e stack utilizando template
+$  pulumi new azure-csharp -s juniorcesar/apresentacao-pulumi/dev
 
 ## Adiciona pacotes no Projeto
-dotnet add package Pulumi.TLS
-dotnet add package Pulumi.Azure
+$ dotnet add package Pulumi.TLS
+$ dotnet add package Pulumi.Azure
+
+## Cria nova stack
+$ pulumi stack init hml
+
+## Cria config 
+$ pulumi config set environment hml
+
+## Cria config Secret
+$pulumi config set --secret vm-password sdjaiUJ#dIKL33
+
+## Obtém valor do Output 
+$pulumi stack output sshPrivateKeyPem --show-secrets
+
