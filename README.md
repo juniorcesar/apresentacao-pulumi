@@ -26,8 +26,14 @@ $ pulumi stack init hml
 $ pulumi config set environment hml
 
 ## Cria config Secret
-$pulumi config set --secret vm-password sdjaiUJ#dIKL33
+$ pulumi config set --secret vm-password sdjaiUJ#dIKL33
 
-## Obtém valor do Output 
-$pulumi stack output sshPrivateKeyPem --show-secrets
+## Exibe valor do secret
+$ pulumi config --show-secrets
+
+## Exibe valor do Output 
+$ pulumi stack output sshPrivateKeyPem --show-secrets
+
+## Altera Stack
+$ pulumi stack select prd
 
