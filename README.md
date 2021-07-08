@@ -19,18 +19,18 @@ $ pulumi stack ls
 $  pulumi new azure-csharp -s juniorcesar/apresentacao-pulumi/dev
 
 ## Adiciona pacotes no Projeto
-dotnet add package Pulumi.TLS
+$ dotnet add package Pulumi.TLS
 
-dotnet add package Pulumi.Azure
+$ dotnet add package Pulumi.Azure
 
 ## Cria nova stack
-pulumi stack init hml
+$ pulumi stack init hml
 
 ## Cria config 
-pulumi config set environment hml
+$ pulumi config set environment hml
 
 ## Cria config Secret
-$pulumi config set --secret vm-password SEh@dhu37s
+$ pulumi config set --secret vm-password SEh@dhu37s
 
 ## Exibe valor do secret
 $ pulumi config --show-secrets
